@@ -12,7 +12,7 @@ Spark can be used with the Hadoop ecosystem, including the HDFS file system and 
 
 ### Installing Spark
 
-As before, we have modified the VagrantFile in the top-level directory directory. Since the Spark distribution is large, we ask you to download that directly from the Spark website.
+Since the Spark distribution is large, we ask you to download that directly from the Spark website.
 
 1. Download the Spark package at http://spark.apache.org/downloads.html. We will use **Version 3.2.0, Pre-built for Hadoop 3.3 or later**.
 2. Move the downloaded file to the `Assignment-3/` directory (so it is available in '/data/Assignment-3'), and uncompress it using: 
