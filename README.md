@@ -27,3 +27,6 @@ PostgreSQL, MongoDB, and Apache Spark pre-loaded.
     - Load transactions: `mongoimport --db "analytics" --collection "transactions" /data/Assignment-2/sample_analytics/transactions.json`
 
 1. For Spark, see the instructions in `Assignment-3` README file for setup.
+
+1. *If you are having trouble installing Docker or somewhere in the steps above, you can also just install the software directly by going through the commands listed in
+the Dockerfile*
