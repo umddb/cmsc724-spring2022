@@ -36,7 +36,9 @@ RUN /etc/init.d/postgresql start &&\
     psql --command "create user root;" university &&\
     psql --command "alter user root with password 'root';" university &&\
     createdb socialnetwork &&\
-    psql --command "\i /datatemp/populate-sn.sql;" socialnetwork 
+    psql --command "\i /datatemp/populate-sn.sql;" socialnetwork  &&\
+    psql --command "alter user root with superuser;"
+
 
 USER root
 

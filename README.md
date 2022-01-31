@@ -16,7 +16,7 @@ PostgreSQL, MongoDB, and Apache Spark pre-loaded.
     - NOTE: you will be logged in as `root`.
     - You need to start PostgreSQL Server: /etc/init.d/postgresql start
     - At this point, you should be able to use psql: `psql socialnewtork`
-    - Start Jupyter: `jupyter-notebook --port=8888 --no-browser --ip=0.0.0.0`
+    - Start Jupyter: `jupyter-notebook --port=8888 --allow-root --no-browser --ip=0.0.0.0`
     - On your host machine, you should be able to visit the URL directly (we did the port mapping above when running Docker).
     - As soon as you exit the Docker container, the machine will shut down -- so only changes you have made in the /data directory will persist.
 
