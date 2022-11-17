@@ -68,8 +68,7 @@ Following steps will get you started with creating a database and populating it 
 * Important: The server should be already started on your virtual machine -- you do not need to start it. However, the following two help pages discuss how to start the
    server: [Creating a database cluster](http://www.postgresql.org/docs/current/static/creating-cluster.html) and [Starting the server](http://www.postgresql.org/docs/current/static/server-start.html)
 
-* PostgreSQL server has a default superuser called **postgres**. You can do everything under that username, or you can create a different username for yourself. If you
-* run a command (say `createdb`) without any options, it uses the same username that you are logged in under (in our case, `root`). However, if you haven't created a PostgreSQL user with that name, the command will fail. You can either create a user (by logging in as the superuser), or run everything as a superuser (typically with the option: **-U postgres**).
+* PostgreSQL server has a default superuser called **postgres**. You can do everything under that username, or you can create a different username for yourself. If you run a command (say `createdb`) without any options, it uses the same username that you are logged in under (in our case, `root`). However, if you haven't created a PostgreSQL user with that name, the command will fail. You can either create a user (by logging in as the superuser), or run everything as a superuser (typically with the option: **-U postgres**).
 
 * For our purposes, we will create a user with superuser privileges. 
 	```

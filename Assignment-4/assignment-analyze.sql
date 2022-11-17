@@ -96,7 +96,7 @@ extract(year from u.birthdate) = 1990 and
 with temp as (
     select f.userid1 as userid, count(*) as c
     from friends f, status s, likes l, members m
-    where s.userid = f.userid2 and l.userid = f.userid2 and m.userid = f.userid2 
+    where s.userid = f.userid2 and l.userid = f.userid2 and m.userid = f.userid2 and extract(year from u2.birthdate) = 1990 
     group by f.userid1
     ) 
 select joined from users u, temp t where
